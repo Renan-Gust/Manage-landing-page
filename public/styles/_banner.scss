@@ -1,0 +1,67 @@
+#container #content{
+    .banner{
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 70px;
+
+            nav.navbar-desktop{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                ul{
+                    display: flex;
+
+                    li{
+                        list-style-type: none;
+                        padding: 0 15px;
+
+                        a{
+                            color: $Dark-Blue;
+                            font-weight: 500;
+                            font-size: 1.2rem;
+
+                            &:hover{
+                                color: $Dark-Grayish-Blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu{
+               display: none;
+
+               span i{
+                    font-size: 2rem;
+                    color: $Dark-Blue;
+                    cursor: pointer;
+               }
+            }
+        }
+
+        main{
+            display: flex;
+
+            .content{
+                h1{
+                    color: $Dark-Blue;
+                    font-size: 2.3rem;
+                }
+
+                p{
+                    margin: 30px 0;
+                    color: $Dark-Grayish-Blue;
+                    line-height: 1.6;
+                }
+            }
+
+            .image{
+                text-align: center;
+            }
+        }
+    }
+}

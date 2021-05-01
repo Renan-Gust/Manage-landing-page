@@ -1,0 +1,131 @@
+@media (min-width: 320px){
+    #container #content{
+        padding: 30px 20px;
+
+        .banner{
+            header{
+                nav.navbar-desktop{
+                    display: none;
+                }
+
+                .menu{
+                    display: block;
+                }
+            }
+    
+            main{
+                flex-direction: column;
+
+                .content{
+                    width: 100%;
+                    order: 2;
+                    text-align: center;
+                }
+
+                .image{
+                    width: 100%;
+                    order: 1;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 500px){
+    #container #content{
+        padding: 30px 40px;
+
+        .banner{
+            main{
+                .content{
+                    text-align: initial;
+                }
+
+                .image img{
+                    width: 380px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    #container #content .banner
+    main{
+        flex-direction: row;
+
+        .content{
+            order: 1;
+        }
+
+        .image img{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    #container #content{
+        .banner{
+            header{
+                nav.navbar-desktop{
+                    display: flex;
+                    width: 79%;
+                }
+
+                .menu{
+                    display: none;
+                }
+            }
+    
+            main{
+                .content{
+                    width: 44%;
+                }
+
+                .image{
+                    width: 56%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    #container #content{
+        padding: 50px 100px;
+
+        .banner{
+            header{
+                nav.navbar-desktop{
+                    width: 70%;
+                }
+            }
+    
+            main{
+                .content{
+                    width: 30%;
+                    margin: 0;
+                }
+
+                .image{
+                    width: 70%;
+                    
+                    img{
+                        width: 520px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1536px){
+    #container #content .banner main .image img{
+        width: initial;
+    }
+}

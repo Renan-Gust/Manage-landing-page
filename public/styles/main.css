@@ -58,21 +58,53 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#container #content .banner main .content h1 {
-  color: #242d52;
-  font-size: 2.3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #container #content .banner main .content p {
   margin: 30px 0;
-  color: #9095a7;
-  line-height: 1.6;
 }
 
 #container #content .banner main .image {
   text-align: center;
+}
+
+#container #content .different {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+#container #content .different main p {
+  margin-top: 30px;
+}
+
+#container #content .different .differences .topic .index {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #content .different .differences .topic .index span {
+  padding: 7px 27px;
+  border-radius: 30px;
+  font-weight: 500;
+  background: #f25f3a;
+  color: #fafafa;
+}
+
+#container #content .different .differences .topic .index h2 {
+  color: #242d52;
+}
+
+#container #content .different .differences .topic .text p {
+  margin-top: 15px;
 }
 
 @media (min-width: 320px) {
@@ -107,6 +139,44 @@
   #container #content .banner main .image img {
     width: 100%;
   }
+  #container #content .different {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #container #content .different main {
+    width: initial;
+    text-align: center;
+    margin: 60px 0;
+  }
+  #container #content .different .differences {
+    width: 100%;
+  }
+  #container #content .different .differences .topic .index {
+    background: #ccc;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: table;
+    width: 100%;
+  }
+  #container #content .different .differences .topic .index span {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 73px;
+  }
+  #container #content .different .differences .topic .index h2 {
+    font-size: clamp(0.95rem, 4vw, 1.625rem);
+    padding-left: 12px;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #container #content .different .differences .topic .text {
+    width: initial;
+    padding: 0;
+  }
 }
 
 @media (min-width: 500px) {
@@ -122,21 +192,18 @@
 }
 
 @media (min-width: 768px) {
-  #container #content .banner
-main {
+  #container #content .banner main {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #container #content .banner
-main .content {
+  #container #content .banner main .content {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  #container #content .banner
-main .image img {
+  #container #content .banner main .image img {
     width: 100%;
   }
 }
@@ -157,6 +224,47 @@ main .image img {
   #container #content .banner main .image {
     width: 56%;
   }
+  #container #content .different main {
+    margin-top: 0;
+  }
+  #container #content .different .differences {
+    display: -ms-grid;
+    display: grid;
+    gap: 30px;
+        grid-template-areas: "topic-1 topic-2" "topic-3 topic-3";
+  }
+  #container #content .different .differences .topic .index {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #container #content .different .differences .topic .index span {
+    display: initial;
+    width: initial;
+    height: initial;
+  }
+  #container #content .different .differences .topic .index h2 {
+    height: initial;
+    display: initial;
+    font-size: 1.5rem;
+  }
+  #container #content .different .differences .topic-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: topic-1;
+  }
+  #container #content .different .differences .topic-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: topic-2;
+    margin: 0;
+  }
+  #container #content .different .differences .topic-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: topic-3;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -171,7 +279,7 @@ main .image img {
     margin: 0;
   }
   #container #content .banner main .image {
-    width: 70%;
+    width: 753px;
   }
   #container #content .banner main .image img {
     width: 520px;
@@ -222,5 +330,16 @@ button.get-started {
 
 button.get-started:hover {
   opacity: 0.7;
+}
+
+.title, #container #content .banner main .content h1, #container #content .different main h1 {
+  color: #242d52;
+  font-size: 2.3rem;
+  line-height: 1.1;
+}
+
+.paragraph, #container #content .banner main .content p, #container #content .different main p, #container #content .different .differences .topic .text p {
+  color: #9095a7;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */

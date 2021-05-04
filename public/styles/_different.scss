@@ -1,0 +1,60 @@
+#container #content{
+    .different{
+        display: flex;
+        justify-content: space-between;
+
+        margin: 30px 0;
+
+        main{
+          //  width: 30%;
+
+            h1{
+                @extend .title;
+            }
+
+            p{
+                margin-top: 30px;
+                @extend .paragraph;
+            }
+        }
+
+        .differences{ 
+           // width: 753px;
+
+            .topic{
+                .index{
+                    align-items: center;
+                  //  display: flex;
+
+                    span{
+                        padding: 7px 27px;
+                        border-radius: 30px;
+                        font-weight: 500;
+
+                        background: $Bright-Red;
+                        color: $Vary-Light-Gray;
+                    }
+
+                    h2{
+                       // padding-left: 20px;
+                        color: $Dark-Blue;
+                    }
+                }
+
+                .text{
+                   // padding-left: 91px;
+                   // width: 500px;
+
+                    p{
+                        margin-top: 15px;
+                        @extend .paragraph;
+                    }
+                }
+            }
+
+            .topic-2{
+              //  margin: 30px 0;
+            }
+        }
+    }
+}

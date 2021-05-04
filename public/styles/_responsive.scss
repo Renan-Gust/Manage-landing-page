@@ -32,6 +32,54 @@
                 }
             }
         }
+
+        .different{
+            flex-direction: column;
+
+            main{
+                width: initial;
+                text-align: center;
+                margin: 60px 0;
+            }
+
+            .differences{
+                width: 100%;
+
+                .topic{
+                    .index{
+                        background: #ccc;
+                        border-bottom-left-radius: 20px;
+                        border-top-left-radius: 20px;
+                       // text-align: center;
+
+                        display: table;
+                        width: 100%;
+
+                        span{
+                            height: 100%;
+                            display: table-cell;
+                            vertical-align: middle;
+
+                            width: 73px;
+                        }
+
+                        h2{
+                            font-size: clamp(0.95rem, 4vw, 1.625rem);
+                            padding-left: 12px;
+
+                            height: 100%;
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .text{
+                        width: initial;
+                        padding: 0;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -92,6 +140,52 @@
                 }
             }
         }
+
+        .different main{
+            margin-top: 0;
+        }
+
+        .different .differences{
+            display: grid;
+            gap: 30px;
+
+            .topic{
+                .index{
+                    display: flex;
+                    
+                    span{
+                        display: initial;
+                        width: initial;
+                        height: initial;
+                    }
+
+                    h2{
+                        height: initial;
+                        display: initial;
+
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .topic-1{
+                grid-area: topic-1;
+            }
+
+            .topic-2{
+                grid-area: topic-2;
+                margin: 0;
+            }
+
+            .topic-3{
+                grid-area: topic-3;
+            }
+
+            grid-template-areas:
+                "topic-1 topic-2"
+                "topic-3 topic-3";
+        }
+
     }
 }
 
@@ -113,7 +207,7 @@
                 }
 
                 .image{
-                    width: 70%;
+                    width: 753px;
                     
                     img{
                         width: 520px;

@@ -50,7 +50,6 @@
                         background: #ccc;
                         border-bottom-left-radius: 20px;
                         border-top-left-radius: 20px;
-                       // text-align: center;
 
                         display: table;
                         width: 100%;
@@ -77,6 +76,10 @@
                         width: initial;
                         padding: 0;
                     }
+                }
+
+                .topic-2{
+                    margin: 60px 0;
                 }
             }
         }
@@ -214,6 +217,54 @@
                     }
                 }
             }
+        }
+
+        .different{
+            flex-direction: row;
+
+            main{
+                margin: 0 100px 0 0;
+                text-align: start;
+            }
+
+            .differences{
+                width: 753px;
+                display: initial;
+
+                .topic{
+                    .index{
+                        background: none;
+                        border: none;
+
+                        h2{
+                            font-size: clamp(0.95rem, 4vw, 1.225rem);
+                            padding-left: 20px;
+                        }
+                    }
+
+                    .text{
+                        width: 500px;
+                        padding-left: 91px;
+                    }
+                }
+
+                .topic-2{
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    #container #content .different{
+        main{
+            width: 30%;
+            margin: 0;
+        }
+
+        .differences .topic .text{
+            width: 600px;
         }
     }
 }

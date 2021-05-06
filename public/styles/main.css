@@ -78,7 +78,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px 0;
+  margin: 60px 0;
 }
 
 #container #content .different main p {
@@ -176,6 +176,9 @@
   #container #content .different .differences .topic .text {
     width: initial;
     padding: 0;
+  }
+  #container #content .different .differences .topic-2 {
+    margin: 60px 0;
   }
 }
 
@@ -284,6 +287,45 @@
   #container #content .banner main .image img {
     width: 520px;
   }
+  #container #content .different {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #container #content .different main {
+    margin: 0 100px 0 0;
+    text-align: start;
+  }
+  #container #content .different .differences {
+    width: 753px;
+    display: initial;
+  }
+  #container #content .different .differences .topic .index {
+    background: none;
+    border: none;
+  }
+  #container #content .different .differences .topic .index h2 {
+    font-size: clamp(0.95rem, 4vw, 1.225rem);
+    padding-left: 20px;
+  }
+  #container #content .different .differences .topic .text {
+    width: 500px;
+    padding-left: 91px;
+  }
+  #container #content .different .differences .topic-2 {
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  #container #content .different main {
+    width: 30%;
+    margin: 0;
+  }
+  #container #content .different .differences .topic .text {
+    width: 600px;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -334,7 +376,7 @@ button.get-started:hover {
 
 .title, #container #content .banner main .content h1, #container #content .different main h1 {
   color: #242d52;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   line-height: 1.1;
 }
 

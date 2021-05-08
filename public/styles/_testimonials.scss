@@ -1,0 +1,47 @@
+#container #content{
+    .testimonials-container{
+        text-align: center;
+
+        h1{
+            @extend .title;
+        }
+
+        .testimonials{
+            display: flex;
+            margin: 130px 0 80px 0;
+
+            .testimonials-person{
+                background-color: #9095a710;
+                border-radius: 8px;
+
+                img{
+                    width: 100px;
+                    position: relative;
+                    bottom: 45px;
+                }
+
+                .content{
+                    padding: 0 25px 15px 25px;
+
+                    h2{
+                        font-size: 1.225rem;
+                        color: $Dark-Blue;
+
+                        position: relative;
+                        bottom: 27px;
+                    }
+
+                    p{
+                        @extend .paragraph;
+                        position: relative;
+                        bottom: 10px;
+                    }
+                }
+            }
+
+            .testimonials-2{
+                margin: 0 30px;
+            }
+        }
+    }
+}

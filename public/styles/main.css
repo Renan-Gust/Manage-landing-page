@@ -78,7 +78,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 60px 0;
+  margin: 80px 0;
 }
 
 #container #content .different main p {
@@ -105,6 +105,48 @@
 
 #container #content .different .differences .topic .text p {
   margin-top: 15px;
+}
+
+#container #content .testimonials-container {
+  text-align: center;
+}
+
+#container #content .testimonials-container .testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 130px 0 80px 0;
+}
+
+#container #content .testimonials-container .testimonials .testimonials-person {
+  background-color: #9095a710;
+  border-radius: 8px;
+}
+
+#container #content .testimonials-container .testimonials .testimonials-person img {
+  width: 100px;
+  position: relative;
+  bottom: 45px;
+}
+
+#container #content .testimonials-container .testimonials .testimonials-person .content {
+  padding: 0 25px 15px 25px;
+}
+
+#container #content .testimonials-container .testimonials .testimonials-person .content h2 {
+  font-size: 1.225rem;
+  color: #242d52;
+  position: relative;
+  bottom: 27px;
+}
+
+#container #content .testimonials-container .testimonials .testimonials-person .content p {
+  position: relative;
+  bottom: 10px;
+}
+
+#container #content .testimonials-container .testimonials .testimonials-2 {
+  margin: 0 30px;
 }
 
 @media (min-width: 320px) {
@@ -154,7 +196,7 @@
     width: 100%;
   }
   #container #content .different .differences .topic .index {
-    background: #ccc;
+    background: #ffefeb;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     display: table;
@@ -179,6 +221,24 @@
   }
   #container #content .different .differences .topic-2 {
     margin: 60px 0;
+  }
+  #container #content .testimonials-container {
+    margin: 0;
+  }
+  #container #content .testimonials-container .testimonials-mobile {
+    display: block;
+    position: relative;
+    height: 250px;
+  }
+  #container #content .testimonials-container .testimonials-mobile .testimonials-person {
+    position: absolute;
+    opacity: 0;
+  }
+  #container #content .testimonials-container .testimonials-mobile .testimonials-person.selected {
+    opacity: 1;
+  }
+  #container #content .testimonials-container .testimonials-desktop {
+    display: none;
   }
 }
 
@@ -268,6 +328,14 @@
     -ms-grid-column-span: 2;
     grid-area: topic-3;
   }
+  #container #content .testimonials-container .testimonials-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #container #content .testimonials-container .testimonials-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -326,6 +394,9 @@
   #container #content .different .differences .topic .text {
     width: 600px;
   }
+  #container #content .testimonials-container {
+    margin-top: 130px;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -374,13 +445,13 @@ button.get-started:hover {
   opacity: 0.7;
 }
 
-.title, #container #content .banner main .content h1, #container #content .different main h1 {
+.title, #container #content .banner main .content h1, #container #content .different main h1, #container #content .testimonials-container h1 {
   color: #242d52;
   font-size: 2.2rem;
   line-height: 1.1;
 }
 
-.paragraph, #container #content .banner main .content p, #container #content .different main p, #container #content .different .differences .topic .text p {
+.paragraph, #container #content .banner main .content p, #container #content .different main p, #container #content .different .differences .topic .text p, #container #content .testimonials-container .testimonials .testimonials-person .content p {
   color: #9095a7;
   line-height: 1.6;
 }

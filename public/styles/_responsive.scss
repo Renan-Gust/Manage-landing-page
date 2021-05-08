@@ -47,7 +47,7 @@
 
                 .topic{
                     .index{
-                        background: #ccc;
+                        background: $Very-Pale-Red;
                         border-bottom-left-radius: 20px;
                         border-top-left-radius: 20px;
 
@@ -81,6 +81,29 @@
                 .topic-2{
                     margin: 60px 0;
                 }
+            }
+        }
+
+        .testimonials-container{
+            margin: 0;
+
+            .testimonials-mobile{
+                display: block;
+                position: relative;
+                height: 250px;
+
+                .testimonials-person{
+                    position: absolute;
+                    opacity: 0;
+                }
+
+                .testimonials-person.selected{
+                    opacity: 1;
+                }
+            }
+
+            .testimonials-desktop{
+                display: none;
             }
         }
     }
@@ -189,6 +212,15 @@
                 "topic-3 topic-3";
         }
 
+        .testimonials-container{
+            .testimonials-desktop{
+                display: flex;
+            }
+
+            .testimonials-mobile{
+                display: none;
+            }
+        }
     }
 }
 
@@ -266,6 +298,10 @@
         .differences .topic .text{
             width: 600px;
         }
+    }
+
+    #container #content .testimonials-container{
+        margin-top: 130px;
     }
 }
 

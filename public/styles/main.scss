@@ -2,6 +2,7 @@
 @import '_banner.scss';
 @import '_different.scss';
 @import '_testimonials.scss';
+@import '_footer.scss';
 @import '_responsive.scss';
 
 *{
@@ -54,4 +55,9 @@ button.get-started{
 .paragraph{
     color: $Dark-Grayish-Blue;
     line-height: 1.6;
+}
+
+.icon-socials{
+    color: white; 
+    font-size: 1.5rem;
 }

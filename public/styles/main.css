@@ -149,6 +149,160 @@
   margin: 0 30px;
 }
 
+#container footer {
+  margin-top: 130px;
+}
+
+#container footer .container {
+  background-color: #f25f3a;
+}
+
+#container footer .container .content-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 215px;
+}
+
+#container footer .container .content-footer h1 {
+  width: 400px;
+  color: #fafafa;
+}
+
+#container footer .container .content-footer button {
+  color: #f25f3a;
+  background: #ffefeb;
+  height: 43px;
+}
+
+#container footer .footer-container {
+  background-color: #1d1e25;
+}
+
+#container footer .footer-container .content-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 70px;
+}
+
+#container footer .footer-container .content-footer .socials {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#container footer .footer-container .content-footer .socials .icon-socials, #container footer .footer-container .content-footer .socials .icon-socials span i {
+  text-align: center;
+}
+
+#container footer .footer-container .content-footer .socials .icon-socials span, #container footer .footer-container .content-footer .socials .icon-socials span i span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#container footer .footer-container .content-footer .socials .icon-socials span i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#container footer .footer-container .content-footer .socials .icon-socials span i:hover {
+  color: #f25f3a;
+}
+
+#container footer .footer-container .content-footer .contact {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container footer .footer-container .content-footer .contact .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container footer .footer-container .content-footer .contact .contact-content a {
+  padding: 8px 0;
+  color: #fafafa;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#container footer .footer-container .content-footer .contact .contact-content a:hover {
+  color: #f25f3a;
+}
+
+#container footer .footer-container .content-footer .send-email {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#container footer .footer-container .content-footer .send-email .block-input input[type="email"] {
+  height: 45px;
+  width: 200px;
+  padding-left: 15px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+
+#container footer .footer-container .content-footer .send-email .block-input input[type="button"] {
+  height: 45px;
+  width: 60px;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #f25f3a;
+  color: #fafafa;
+}
+
+#container footer .footer-container .content-footer .send-email .block-input input[type="button"]:hover {
+  opacity: 0.7;
+}
+
+#container footer .footer-container .content-footer .send-email p {
+  color: #9095a7;
+}
+
 @media (min-width: 320px) {
   #container #content {
     padding: 30px 20px;
@@ -454,5 +608,10 @@ button.get-started:hover {
 .paragraph, #container #content .banner main .content p, #container #content .different main p, #container #content .different .differences .topic .text p, #container #content .testimonials-container .testimonials .testimonials-person .content p {
   color: #9095a7;
   line-height: 1.6;
+}
+
+.icon-socials, #container footer .footer-container .content-footer .socials .icon-socials span i {
+  color: white;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

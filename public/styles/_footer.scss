@@ -7,12 +7,9 @@
 
             .content-footer{
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
-                padding: 30px 215px;
 
                 h1{
-                    width: 400px;
                     color: $Vary-Light-Gray;
                 }
 
@@ -24,20 +21,18 @@
             }
         }
 
-        .footer-container{
+        .container-footer{
             background-color: $Very-Dark-Blue;
 
             .content-footer{
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                padding: 30px 70px;
 
                 .socials{
                     height: 200px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
 
                     .icon-socials{
                         text-align: center;
@@ -59,8 +54,6 @@
                 }
 
                 .contact{
-                    width: 350px;
-
                     display: flex;
                     justify-content: space-between;
 
@@ -80,13 +73,12 @@
                     }
                 }
 
-                .send-email{
-                    height: 200px;
+                .wrapper{
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                    height: 200px;
 
-                    .block-input{
+                    form .block-input{
                         input[type="email"]{
                             height: 45px;
                             width: 200px;
@@ -105,12 +97,13 @@
                             border: none;
                             outline: none;
                             border-radius: 30px;
-                            cursor: pointer;
 
+                            cursor: pointer;
                             font-weight: 500;
-                            
-                            background-color: $Bright-Red;
-                            color: $Vary-Light-Gray;
+                            transition: 0.3s;
+
+                            background-color: #f25f3a;
+                            color: #fafafa;
 
                             &:hover{
                                 opacity: 0.7;
@@ -118,8 +111,8 @@
                         }
                     }
 
-                    p{
-                        color: $Dark-Grayish-Blue;
+                    .copyright p{
+                        color: $Vary-Light-Gray;
                     }
                 }
             }

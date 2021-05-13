@@ -107,6 +107,40 @@
             }
         }
     }
+
+    #container{
+        footer{
+            .container{
+                .content-footer{
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 300px;
+                    padding: 30px 20px;
+
+                    h1{
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .container-footer{
+                .content-footer{
+                    flex-direction: column;
+                    padding: 20px;
+
+                    .socials,
+                    .wrapper{
+                        justify-content: space-evenly;
+                    }
+
+                    .contact{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 500px){
@@ -125,21 +159,26 @@
             }
         }
     }
+
+    #container footer .container-footer .content-footer .contact{width: 50%;}
 }
 
 @media (min-width: 768px){
-    #container #content .banner
-    main{
-        flex-direction: row;
-
-        .content{
-            order: 1;
-        }
-
-        .image img{
-            width: 100%;
+    #container #content .banner{
+        main{
+            flex-direction: row;
+    
+            .content{
+                order: 1;
+            }
+    
+            .image img{
+                width: 100%;
+            }
         }
     }
+    
+    #container footer .container-footer .content-footer .contact{width: 35%;}
 }
 
 @media (min-width: 1024px){
@@ -222,6 +261,29 @@
             }
         }
     }
+
+    #container{
+        footer{
+            .container .content-footer{
+                height: initial;
+                padding: 30px 115px;
+                justify-content: space-between;
+                flex-direction: row;
+
+                h1{
+                    width: 400px;
+                }
+            }
+
+            .container-footer .content-footer{
+                flex-direction: row;
+
+                .contact{
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px){
@@ -282,6 +344,29 @@
 
                 .topic-2{
                     margin: 30px 0;
+                }
+            }
+        }
+    }
+
+    #container{
+        footer{
+            .container .content-footer{
+                padding: 30px 215px;
+            }
+
+            .container-footer{
+                .content-footer{
+                    padding: 30px 70px;
+
+                    .socials,
+                    .wrapper{
+                        justify-content: space-around;
+                    }
+
+                    .contact{
+                        width: 350px;
+                    }
                 }
             }
         }

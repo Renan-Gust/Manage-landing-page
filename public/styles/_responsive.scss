@@ -91,6 +91,7 @@
                 display: block;
                 position: relative;
                 height: 250px;
+                margin-bottom: 30px;
 
                 .testimonials-person{
                     position: absolute;
@@ -99,10 +100,32 @@
 
                 .testimonials-person.selected{
                     opacity: 1;
+                    transition: ease-in 0.6s;
                 }
             }
 
-            .testimonials-desktop{
+            .testimonials-mobile-area .index{
+                width: 100%;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: center;
+
+                span{
+                    height: 10px;
+                    width: 10px;
+                    margin: 0 10px;
+
+                    border: 2px solid $Bright-Red;
+                    border-radius: 50%;
+                }
+
+                span.active{
+                    background: $Bright-Red;
+                    transition: ease-in 0.6s;
+                }
+            }
+
+            .testimonials-desktop-area{
                 display: none;
             }
         }
@@ -252,11 +275,11 @@
         }
 
         .testimonials-container{
-            .testimonials-desktop{
+            .testimonials-desktop-area{
                 display: flex;
             }
 
-            .testimonials-mobile{
+            .testimonials-mobile-area{
                 display: none;
             }
         }

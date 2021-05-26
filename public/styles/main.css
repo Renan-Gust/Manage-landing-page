@@ -145,7 +145,7 @@
   bottom: 10px;
 }
 
-#container #content .testimonials-container .testimonials .testimonials-2 {
+#container #content .testimonials-container .testimonials-desktop-area .testimonials-person:nth-child(2) {
   margin: 0 30px;
 }
 
@@ -374,6 +374,7 @@
     display: block;
     position: relative;
     height: 250px;
+    margin-bottom: 30px;
   }
   #container #content .testimonials-container .testimonials-mobile .testimonials-person {
     position: absolute;
@@ -381,8 +382,32 @@
   }
   #container #content .testimonials-container .testimonials-mobile .testimonials-person.selected {
     opacity: 1;
+    -webkit-transition: ease-in 0.6s;
+    transition: ease-in 0.6s;
   }
-  #container #content .testimonials-container .testimonials-desktop {
+  #container #content .testimonials-container .testimonials-mobile-area .index {
+    width: 100%;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #container #content .testimonials-container .testimonials-mobile-area .index span {
+    height: 10px;
+    width: 10px;
+    margin: 0 10px;
+    border: 2px solid #f25f3a;
+    border-radius: 50%;
+  }
+  #container #content .testimonials-container .testimonials-mobile-area .index span.active {
+    background: #f25f3a;
+    -webkit-transition: ease-in 0.6s;
+    transition: ease-in 0.6s;
+  }
+  #container #content .testimonials-container .testimonials-desktop-area {
     display: none;
   }
   #container footer .container .content-footer {
@@ -510,12 +535,12 @@
     -ms-grid-column-span: 2;
     grid-area: topic-3;
   }
-  #container #content .testimonials-container .testimonials-desktop {
+  #container #content .testimonials-container .testimonials-desktop-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #container #content .testimonials-container .testimonials-mobile {
+  #container #content .testimonials-container .testimonials-mobile-area {
     display: none;
   }
   #container footer .container .content-footer {

@@ -1,5 +1,6 @@
 @import '_variables.scss';
 @import '_banner.scss';
+@import '_menu.scss';
 @import '_different.scss';
 @import '_testimonials.scss';
 @import '_footer.scss';
@@ -60,4 +61,14 @@ button.get-started{
 .icon-socials{
     color: white; 
     font-size: 1.5rem;
+}
+
+.menu-link{
+    color: $Dark-Blue !important;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    &:hover{
+        color: $Dark-Grayish-Blue !important;
+    }
 }

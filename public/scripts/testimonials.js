@@ -25,31 +25,26 @@ testimonialsJsonMobile.map((item) => {
 c(".testimonials-mobile .testimonials-person").classList.add("selected")
 c(".testimonials-mobile-area .index span").classList.add("active")
 
-function executeSlider() {
-    let people = cs(".testimonials-mobile .testimonials-person")
-    let indexActive = cs(".testimonials-mobile-area .index span")
-    let max = people.length
-    let indexCurrent = 0
+let people = cs(".testimonials-mobile .testimonials-person")
+let indexActive = cs(".testimonials-mobile-area .index span")
+let max = people.length
+let indexCurrent = 0
 
-    function nextPerson() {
-        people[indexCurrent].classList.remove("selected")
-        indexActive[indexCurrent].classList.remove("active")
+function nextPerson() {
+    people[indexCurrent].classList.remove("selected")
+    indexActive[indexCurrent].classList.remove("active")
 
-        indexCurrent++
-        if(indexCurrent >= max) indexCurrent = 0
+    indexCurrent++
+    if (indexCurrent >= max) indexCurrent = 0
 
-        people[indexCurrent].classList.add("selected")
-        indexActive[indexCurrent].classList.add("active")
-    }
-
-    function start() {
-        setInterval(() => {
-            nextPerson()
-        }, 2000);
-    }
-
-    window.addEventListener("load", start)
+    people[indexCurrent].classList.add("selected")
+    indexActive[indexCurrent].classList.add("active")
 }
-    
-const screenWidth = window.screen.width
-if(screenWidth >= 320 && screenWidth <= 1024) executeSlider
+
+function start() {
+    setInterval(() => {
+        nextPerson()
+    }, 2000);
+}
+
+window.addEventListener("load", start)
